@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section--top">
+        <!-- img class son dos logos que van en la parte superior e inferior de la primer sección de la
+            página web del curso-->
+        <!--src significa source indica donde esta almacenada la imagen-->
+        <!--alt el texto en esta sección aparecerá en lugar de la imagen en la página web en caso que
+             esta no se cargue-->
+        <img class="img--logo img--logo_1" src="ph/logo/logo_1.png" alt="Vintage" />
+        <img class="img--logo img--logo_2" src="ph/logo/logo_2.png" alt="Suitcase" />
+        <canvas id="drawingCanvas"></canvas>
+    </section>
+
+    <section class="section--about">
+        <p class="about__text">
+            Este es un espacio donde exploraré diferentes aspectos de la cultura pop estadounidense de los años 90'. Las
+            personas de mi generación nos vimos marcadas y en parte formadas por estos consumos de entretenimiento,
+            moda, música y cultura general, y este es un rincón donde pretendo revisionar y compartir mis apreciaciones
+            sobre estos productos desde una mirada actual.
+        </p>
+        <div class="border"></div>
+    </section>
+
+    <section class="section--work">
+        <div class="gallery">
+            <div class="gallery__item">
+                <a href="./peliculas.html"><img class="gallery__img" src="ph/Images/ADPL_fotos/3.jpg" alt="" /></a>
+            </div>
+            <div class="gallery__item">
+                <a href="./música.html"><img class="gallery__img" src="ph/Images/ADPL_fotos/4.jpg" alt="" /></a>
+            </div>
+            <div class="gallery__item">
+                <a href="tvShows.html"><img class="gallery__img" src="ph/Images/ADPL_fotos/7.jpg" alt="" /></a>
+            </div>
+            <div class="gallery__item">
+                <a href="culturaPop.html"><img class="gallery__img" src="ph/Images/ADPL_fotos/6.jpg" alt="" /></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section--contact">
+        <div class="border"></div>
+        <div class="contact__inner">
+            <div class="contact__column">
+                <p class="contact__text">
+                    Carrera: Licenciatura en Artes Digitales
+                    <br />
+                    Materia: Arte Digital Aplicado
+                    <br />
+                    Universidad Nacional de Quilmes
+                    <br />
+                    Daniela Ivón Duarte
+                </p>
+            </div>
+
+            <div class="contact__column">
+                <p class="contact__text">
+                    <a href="https://www.instagram.com/danielaivonduarte/" target="_blank">
+                        Instagram
+                    </a>
+                </p>
+
+                <p class="contact__text">
+                    <a href="mailto:danielaivonduarte@gmail.com" target="_blank">
+                        Email
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
