@@ -46,10 +46,10 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var url = window.location.href;
-var imageToDraw = url.includes("index.html") ? "anos90.png" :
-url.includes("peliculas.html") ? "01_P.png" : 
-url.includes("tvShows.html") ? "03_TV.png" :
-url.includes("culturaPop.html") ? "02_CP.png" :
+var imageToDraw = url.includes("index") ? "anos90.png" :
+url.includes("peliculas") ? "01_P.png" : 
+url.includes("tvShows") ? "03_TV.png" :
+url.includes("culturaPop") ? "02_CP.png" :
 "00_M.png";
 
 anos90 = document.createElement('img');
