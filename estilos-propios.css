@@ -11,9 +11,10 @@
 }
 
 .secciones-principales {
-    height: 140vh;
+    height: 110vh;
 }
 
 .link-footer {
     text-decoration: none;
+    color: rgb(55, 54, 54);
 }
