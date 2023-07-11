@@ -5,15 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultura Pop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos-propios.css">
 </head>
-
 <body>
-    <h1>Cultura Pop</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eius laborum voluptatem
-            accusamus voluptatibus ea. Fugit harum, atque laudantium quod maiores impedit incidunt esse,
-            unde ipsa autem reprehenderit minus dolore?</p>
-   
+    <div class="container-fluid overflow-hidden text-center">
+        <div class="row">
+            <canvas style="position: absolute;z-index: 999999;" id="drawingCanvas"></canvas>
+            <div class="col p-5">
+                <img class="img--logo img--logo_1 d-block w-100 logo-arriba" src="ph/logo/cultura.png"
+                    alt="POP" />
+            </div>
+        </div>
+        <div class="row" style="height:38vh"></div>
+        <div class="row" style="height:120vh">
+            <div class="col-6">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./ph/Images/POP/Anderson.jpeg" class="img-fluid rounded-start"
+                                alt="Clarissa">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Pamela Anderson</h5>
+                                <p class="card-text">La modelo y actriz Pamela Anderson es, sin lugar a dudas, una de las caras más reconocibles de la década de los 90's . Su estética representa unos de los principales modelos de belleza establecidos y popularizados durante esa época.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./ph/Images/POP/1.jpeg" class="img-fluid rounded-start"
+                                alt="1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Kate Moss</h5>
+                                <p class="card-text">Dentro de las supermodelos de la década de los 90's, Kate Moss es una de las más reconocidas. Desde su salto a la fama en 1992 como modelo para la línea de perfumes de Calvin Klein ha sabido mantener su status y popularidad gracias a una particular estética que la apartó de las características más exageradas de un modelo de belleza que se ponía por encima de los aspectos naturales de las mujeres.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./ph/Images/POP/2.jpeg" class="img-fluid rounded-start"
+                                alt="2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Winona Ryder</h5>
+                                <p class="card-text">Sin lugar a dudas una de las caras más populares del Hollywood de los 90, Winona Ryder ha sabido ganarse el respeto del mundo actoral a base de un gran talento. Entre las grandes producciones de las que fue parte se destacan Beetlegeuse, Edward Scissorhands y Drácula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="background-color: #c7c7c7; height: 40vh;">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row" style="padding-top: 3vh;">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent">Carrera: Lic. en Artes Digitales</li>
+                                <li class="list-group-item bg-transparent">Materia: Arte Digital Aplicado</li>
+                                <li class="list-group-item bg-transparent">Universidad Nacional de Quilmes</li>
+                                <li class="list-group-item bg-transparent">Daniela Ivón Duarte</li>
+                            </ul>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row" style="padding-top: 3vh;">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <button type="button" class="btn btn-outline-primary btn-sm">
+                                <a class="link-footer" href="https://www.instagram.com/danielaivonduarte/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg> Instagram</a></button>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+            type="button" style="position: fixed;
+            bottom: 30px; z-index: 9999999;
+            right: 0; border-radius: 150px;" class="btn
+            btn-success btn-lg" id="botonMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div style="z-index: 9999999;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <!-- Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc. -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent"><a class="list-group-item list-group-item-action"
+                            href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                            </svg> Home</a></li>
+                    <li class="list-group-item bg-transparent"><a class="list-group-item list-group-item-action"
+                            href="./peliculas.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+                                <path
+                                    d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z" />
+                                <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                            </svg> Películas</a></li>
+                    <li class="list-group-item bg-transparent"><a class="list-group-item list-group-item-action"
+                            href="./música.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                            </svg> Música</a></li>
+                    <li class="list-group-item bg-transparent"><a class="list-group-item list-group-item-action"
+                            href="./tvShows.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
+                            </svg> Televisión</a></li>
+                    <li class="list-group-item bg-transparent"><a class="list-group-item list-group-item-action"
+                            href="./culturaPop.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg> Cultura POP</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>  
 </body>
-
 </html>

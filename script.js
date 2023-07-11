@@ -20,12 +20,14 @@ const handleMouseUp = () => {
 }
 
 const handleMouseMove = (event) => {
-  const scrollAmount = document.scrollingElement.scrollTop;
-  const paintbrushHeight = paintbrush.naturalHeight;
-  const paintLimit = window.innerHeight - paintbrushHeight;
-  const left = event.clientX;
-  const top = Math.min(paintLimit, event.clientY + scrollAmount);
-  context.drawImage(paintbrush, left, top);
+  if (mouseIsDown) {
+    const scrollAmount = document.scrollingElement.scrollTop;
+    const paintbrushHeight = paintbrush.naturalHeight;
+    const paintLimit = window.innerHeight - paintbrushHeight;
+    const left = event.clientX;
+    const top = Math.min(paintLimit, event.clientY + scrollAmount);
+    context.drawImage(paintbrush, left, top);
+  }
 }
 
 const handleTouchMove = (event) => {
@@ -43,19 +45,22 @@ const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+var url = window.location.href;
+var imageToDraw = url.includes("index.html") ? "anos90.png" :
+url.includes("peliculas.html") ? "01_P.png" : 
+url.includes("tvShows.html") ? "03_TV.png" :
+url.includes("culturaPop.html") ? "02_CP.png" :
+"00_M.png";
+
 anos90 = document.createElement('img');
-anos90.src = 'ph/Images/anos90.png';
+anos90.src = `ph/Images/${imageToDraw}`;
 // Logo90 = document.createElement('img');
 // Logo90.src = 'ph/Images/Logo90.png';
 
 canvas.addEventListener('mousemove', handleMouseMove);
-window.addEventListener('mousedown', handleMouseDown);
+canvas.addEventListener('mousedown', handleMouseDown);
 window.addEventListener('mouseup', handleMouseUp);
 
-canvas.addEventListener('touchmove', handleTouchMove);
-window.addEventListener('touchstart', handleMouseDown);
+// canvas.addEventListener('touchmove', handleTouchMove);
+// window.addEventListener('touchstart', handleMouseDown);
 window.addEventListener('touchend', handleMouseUp);
-
-
-
-

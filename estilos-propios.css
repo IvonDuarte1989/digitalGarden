@@ -1,0 +1,19 @@
+.logo-arriba {
+    top: 0;
+    -webkit-mask: linear-gradient(#000000, transparent);
+    mask: linear-gradient(#000000, transparent);
+}
+
+.logo-abajo {
+    bottom: 0;
+    -webkit-mask: linear-gradient(transparent, #000000);
+    mask: linear-gradient(transparent, #000000);
+}
+
+.secciones-principales {
+    height: 140vh;
+}
+
+.link-footer {
+    text-decoration: none;
+}
